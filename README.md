@@ -6,6 +6,6 @@ This is a project for the course [Fundamentos de Javascript](https://platzi.com/
 
 This is the classic game Tic-tac-toe! 
 
-## Licence 
+## License 
 
 [MIT](https://opensource.org/licenses/MIT)
