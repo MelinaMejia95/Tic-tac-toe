@@ -1,0 +1,26 @@
+{
+	"name": "tic-tac-toe",
+	"version": "0.1.0",
+	"description": "Classic game Tic-tac-toe",
+	"main": "index.html",
+ 
+ 	"repository": {
+ 		"type": "git",
+ 		"url" :"https://github.com/MelinaMejia95/Tic-tac-toe.git"
+ 	},
+ 	"keywords": [
+ 		"platzi",
+ 		"course",
+ 		"javascript",
+ 		"js",
+ 		"HTML",
+ 		"tic-tac-toe"
+ 	],
+ 	"author": "Melina Mejia <melinamejia95@gmail.com> (https://twitter.com/melinamejia95)",
+  	"license": "MIT",
+  	"bugs": {
+    "url": "https://github.com/MelinaMejia95/Tic-tac-toe/issues"
+  	},
+  	"homepage": "https://github.com/MelinaMejia95/Tic-tac-toe#readme",
+ }
+
