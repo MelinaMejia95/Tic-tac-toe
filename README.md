@@ -1,11 +1,11 @@
-#Tic Tac Toe 
+# Tic Tac Toe 
 
 This is a project for the course [Fundamentos de Javascript](https://platzi.com/js) of [Platzi](https://platzi.com)
 
-##Description
+## Description
 
 This is the classic game Tic-tac-toe! 
 
-##Licence 
+## Licence 
 
 [MIT](https://opensource.org/licenses/MIT)
