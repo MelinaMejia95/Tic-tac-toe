@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 header {
 	background-color: #7CDF1A;
 	color: #FFF;
