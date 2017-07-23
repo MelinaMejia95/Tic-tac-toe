@@ -11,9 +11,9 @@
 		<section>
 			<div class="board">
 				<div class="row">
-					<div class="key one">
+					<div class="key one" onclick="mostrar()" id="1">
 					</div>
-					<div class="key two">
+					<div class="key two" onclick="alert('Le has dado click a la casilla 2')">
 					</div>
 					<div class="key three">
 					</div>
@@ -36,5 +36,14 @@
 				</div>
 			</div>
 		</section>
+		<script>
+			function mostrar () {
+				let img = document.createElement('img')
+				img.src = 'logo.png'
+				img.width = '50'
+				img.height = '30'
+				document.getElementById('1').appendChild(img)
+			}
+		</script>
 	</body>
 </html>
