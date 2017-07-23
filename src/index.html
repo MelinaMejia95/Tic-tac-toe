@@ -37,29 +37,49 @@
 			</div>
 		</section>
 		<script>
-			var sw = 0
-			var el = ''
+			var sw = 0, el = '', cont = 0
 			function mostrar (id) {
 				el = document.getElementById(id)
 				var ban = 1
-				if(ban == 1 && sw == 0 && el.getAttribute('name') != 'checked'){
+				if(ban == 1 && sw == 0 && el.getAttribute('name') != 'checkedx' && el.getAttribute('name') != 'checkedo'){
 					let img = document.createElement('img')
 					img.src = 'logo.png'
 					img.width = '50'
 					img.height = '30'
 					document.getElementById(id).appendChild(img)
-					el.setAttribute('name', 'checked')
+					el.setAttribute('name', 'checkedx')
 					ban = 0
 					sw = 1
-				} else if(sw == 1 && el.getAttribute('name') != 'checked') {
+					winner()
+				} else if(sw == 1 && el.getAttribute('name') != 'checkedo' && el.getAttribute('name') != 'checkedx') {
 					let img = document.createElement('img')
 					img.src = 'circle.png'
 					img.width = '50'
 					img.height = '30'
 					document.getElementById(id).appendChild(img)
 					sw = 0
-					el.setAttribute('name', 'checked')
+					el.setAttribute('name', 'checkedo')
+					winner()
 				}
+			}
+
+			function winner () {
+				if (document.getElementById('1').getAttribute('name') == 'checkedx' && document.getElementById('2').getAttribute('name') == 'checkedx' && document.getElementById('3').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('1').getAttribute('name') == 'checkedo' && document.getElementById('2').getAttribute('name') == 'checkedo' && document.getElementById('3').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('4').getAttribute('name') == 'checkedx' && document.getElementById('5').getAttribute('name') == 'checkedx' && document.getElementById('6').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('4').getAttribute('name') == 'checkedo' && document.getElementById('5').getAttribute('name') == 'checkedo' && document.getElementById('6').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('7').getAttribute('name') == 'checkedx' && document.getElementById('8').getAttribute('name') == 'checkedx' && document.getElementById('9').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('7').getAttribute('name') == 'checkedo' && document.getElementById('8').getAttribute('name') == 'checkedo' && document.getElementById('9').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('1').getAttribute('name') == 'checkedx' && document.getElementById('4').getAttribute('name') == 'checkedx' && document.getElementById('7').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('1').getAttribute('name') == 'checkedo' && document.getElementById('4').getAttribute('name') == 'checkedo' && document.getElementById('7').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('2').getAttribute('name') == 'checkedx' && document.getElementById('5').getAttribute('name') == 'checkedx' && document.getElementById('8').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('2').getAttribute('name') == 'checkedo' && document.getElementById('5').getAttribute('name') == 'checkedo' && document.getElementById('8').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('3').getAttribute('name') == 'checkedx' && document.getElementById('6').getAttribute('name') == 'checkedx' && document.getElementById('9').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('3').getAttribute('name') == 'checkedo' && document.getElementById('6').getAttribute('name') == 'checkedo' && document.getElementById('9').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('1').getAttribute('name') == 'checkedx' && document.getElementById('5').getAttribute('name') == 'checkedx' && document.getElementById('9').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('1').getAttribute('name') == 'checkedo' && document.getElementById('5').getAttribute('name') == 'checkedo' && document.getElementById('9').getAttribute('name') == 'checkedo') alert('Ganaste!')
+				if (document.getElementById('3').getAttribute('name') == 'checkedx' && document.getElementById('5').getAttribute('name') == 'checkedx' && document.getElementById('7').getAttribute('name') == 'checkedx') alert('Ganaste!')
+				if (document.getElementById('3').getAttribute('name') == 'checkedo' && document.getElementById('5').getAttribute('name') == 'checkedo' && document.getElementById('7').getAttribute('name') == 'checkedo') alert('Ganaste!')
 			}
 		</script>
 	</body>
