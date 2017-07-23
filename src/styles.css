@@ -32,6 +32,7 @@ header {
 .key {
 	animation: appear 2.5s;
 	width: 80px;
+	height: 40px;
 	padding: 36px 10px;
 	text-transform: uppercase;
 	text-align: center;
