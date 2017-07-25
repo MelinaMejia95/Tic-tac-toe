@@ -37,6 +37,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="sweetalert.min.js"></script>
 		<script>
 			var sw = 0, el = '', cont = 0
 			function mostrar (id) {
@@ -47,6 +48,7 @@
 					img.src = 'logo.png'
 					img.width = '50'
 					img.height = '30'
+					img.className = 'img'
 					document.getElementById(id).appendChild(img)
 					el.setAttribute('name', 'checkedx')
 					ban = 0
@@ -57,6 +59,7 @@
 					img.src = 'circle.png'
 					img.width = '50'
 					img.height = '30'
+					img.className = 'img'
 					document.getElementById(id).appendChild(img)
 					sw = 0
 					el.setAttribute('name', 'checkedo')
@@ -84,7 +87,39 @@
 			}
 
 			function message () {
-				alert('Ganaste!')
+				swal({
+	              title: 'Ganaste!',
+	              text: '¿Quieres jugar de nuevo?',
+	              showCancelButton: true,
+	              confirmButtonText: 'Si',
+	              cancelButtonText: 'No',
+	              closeOnConfirm: true
+	            }, function(ok) {
+	                if(ok) {
+	                	let elem = document.getElementsByClassName('img')
+	                	while(elem.length!=0){
+	                		elem[0].remove()
+	                	}
+	                	/*let parent = document.getElementsByName('checkedo')
+	                	var child = ''
+	                	console.log(parent.length)
+	                	for (var i = 0; i < parent.length; i++) {
+	                		if(parent[i].getAttribute('name') == 'checkedo' || parent[i].getAttribute('name') == 'checkedx') {
+		                		child = parent[i].getElementsByClassName('img')
+		                		console.log(child)
+		                		child.remove()
+		                		parent[i].removeChild(child)
+	                		}
+	                	}*/
+	                	/*let obj = document.getElementsByClassName('key')
+	                	obj.forEach(function (element) {
+	                		element.removeAttribute('name')
+	                	})*/
+	                	for (var i = 1; i <= 9; i++) {
+	                		document.getElementById(i).removeAttribute('name');
+	                	}
+	                }
+	            })
 			}
 		</script>
 	</body>
